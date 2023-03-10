@@ -1,0 +1,443 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.delete {outline: none !important;box-shadow: none !important;}
+.show {width: 100% !important;transition: all 0.5s;}
+.hide {transform: translateX(299px);transition: all 0.5s;}
+.paddToggle {
+    padding-right: 70px !important;
+    transition: 0.3s all;
+    -webkit-transition: 0.3s all;
+    -moz-transition: 0.3s all;
+    -o-transition: 0.3s all;
+}
+.header-color {color: #EDC692;font-size: 28pt;position: relative;z-index: 1;padding-right: 5px;}
+.header-color::before {
+    content: '';
+    position: absolute;
+    background: #002134;
+    height: 55px;
+    top: -5px;
+    right: 0px;
+    z-index: -1;
+}
+body {background-color: #01314D;}
+/* This is Detrmine The Width Scroll Bar */ 
+::-webkit-scrollbar {width: 8px;}
+::-moz-scrollbar {width: 8px;}
+::-O-scrollbar {width: 8px;}
+
+/* This is Detrmine The background Scroll Track */
+::-webkit-scrollbar-track {background: #002134;}
+::-moz-scrollbar-track {background: #002134;}
+::-moz-scrollbar-track {background: #002134;}
+
+/* This is Detrmine The background Scroll thumb */
+::-webkit-scrollbar-thumb {background: #01314D}
+#Main {
+    padding-top: 170px !important;
+}
+#Main,#Portifollio,#about,#Service,
+#partners,#addService,#Contact,#detial {padding-top: 170px !important ;}
+/* Side Bar Style */ 
+.sideBar {
+
+    overflow-x: auto;
+    width: 22%;
+    z-index: 40;
+    background-color: #002134;
+    position: fixed;
+    right: 0;
+    height: 100%;
+    color: white;
+    transition: all 0.5s;
+    border-left: 1px solid #a7a7a7;
+    padding: 8px 70px 0px 0px;
+
+    
+
+}
+.sideBar .LogoCompany img{width: 70%;border: 1px solid #707070;}
+.sideBar .Navsidebar .navbar-nav .nav-item.active a{font-family: 'notobold'; color: white;}
+.sideBar .Navsidebar .navbar-nav .nav-item a h4{font-size: 15pt;}
+.sideBar .Navsidebar .navbar-nav .nav-item a {
+    position: relative;
+    right: 0;
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -O-transition: all 0.3s ease-in-out;
+}
+.sideBar .Navsidebar .navbar-nav .nav-item a:hover {right: 5px;}
+.sideBar .Navsidebar .navbar-nav .nav-item a{font-family: 'notoregular';margin-bottom: 10px;color: #c9c9c9;}
+
+/* Main Style */ 
+.mainBody {
+    width: 78%;
+    transition: all 0.5s;
+    margin-right: auto;
+    position: relative;
+    height: 100%;
+}
+.mainBody .topNav {
+    border-bottom: 1px solid #a7a7a7;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    width: 100%;
+    z-index: 2;
+    margin-bottom: 150px;
+    background:#01314D;
+}
+.mainBody .PaddContent {padding-left: 70px;padding-right: 10px;}
+.mainBody .content .header .mainheader::before {width: 125px;}
+.mainBody .content .header .portifilloheader::before {width: 215px;}
+.mainBody .content .header .addserviceheader::before {width: 160px;}
+.mainBody .content .header .aboutheader::before {width: 170px;}
+.mainBody .content .sliderMainSlide .item{
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+    border-radius: 10px;
+}
+.mainBody .content .sliderMainSlide .item .bgimg {
+    background:linear-gradient(-90deg,rgba(98,127,145,0.6),rgba(255,255,255,0));
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding:30px;
+    border-radius: 10px;
+}
+.mainBody .content .sliderMainSlide .item .logo-company {width: 80px;height: auto;margin-right: auto;}
+.mainBody .content .sliderMainSlide .item .body-slide .title-slide{width: 50%;font-size: 25pt;line-height: 60px;margin-bottom: 30px;}
+.mainBody .content .sliderMainSlide .item .body-slide .describe-slide{width: 40%;font-size: 9pt;line-height: 25px;margin-bottom: 35px;}
+.mainBody .content .sliderMainSlide .item .body-slide .link-slide{padding-bottom: 30px;}
+.mainBody .content .sliderMainSlide .item .body-slide .link-slide a{
+    width: 100px;
+    color: #01314D;
+    background-color: white;
+    font-size: 13pt;
+    padding: 5px 10px 5px 10px;
+    border-radius: 3px;
+    border: 2px solid white;
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -O-transition: all 0.3s ease-in-out;
+}
+.mainBody .content .sliderMainSlide .item .body-slide .link-slide a:hover {color: white;background-color: rgba(0,0,0,0);}
+.mainBody .content .sliderMainSlide .owl-dots{
+    position: absolute;
+    left: 20px;
+    bottom: 10px;
+}
+.mainBody .content .sliderMainSlide .owl-dots .owl-dot span{
+    background: #01314D;
+    border: 1px solid #01314D;
+    margin: 3px;
+    width: 12px;
+    height: 12px;
+    outline: none !important;
+    box-shadow: none !important;
+}
+.mainBody .content .sliderMainSlide .owl-dots .owl-dot.active span {
+    background: none;
+    border: 1px solid #01314D;
+}
+
+
+/* Main Body Style =>  portifillio Page*/ 
+.mainBody .content .works .work .work-description {
+    bottom: 0px;
+    width: 100%;
+    height: 100%;
+    /*rgba(98,127,145,0.6)*/
+    background:linear-gradient(0deg,rgba(98,127,145,0.5),rgba(255,255,255,0));
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -O-transition: all 0.3s ease-in-out;
+}
+.mainBody .content .works .paddwork:nth-child(odd) {padding-left: 25px;}
+.mainBody .content .works .paddwork:nth-child(even) {padding-right: 25px;}
+.mainBody .content .works .paddwork:nth-last-child(2) {margin-bottom: 0px;}
+.mainBody .content .works .paddwork:nth-last-child(1) {margin-bottom: 0px;}
+.mainBody .content .works .paddwork {margin-bottom: 70px;}
+.mainBody .content .works .work:hover .work-description {opacity: 1;}
+.mainBody .content .works .work .work-description i {font-size: 10pt;color: #EDC692;}
+.mainBody .content .works .work .work-description span {font-size: 16pt;}
+
+
+/* Main Body Style =>  Add Service Page*/ 
+.mainBody .content .describe-service p{font-size: 11pt;width: 46%;line-height: 30px;}
+.mainBody .content .specialpadding {padding-right: 70px;}
+.mainBody .content .addService form .form-control {
+    background: none;
+    border: none;
+    color: white;
+    border-radius: 0px;
+    padding-right: 5px;
+    border-bottom: 1px solid white;
+    font-size: 11pt;
+    margin-bottom: 45px;
+    width: 75%;
+}
+.mainBody .content .addService form textarea {resize: none;}
+.mainBody .content .addService form .form-control.email,
+.mainBody .content .addService form .form-control.phone {font-family: 'muli';}
+.mainBody .content .addService form .form-control.email::placeholder,
+.mainBody .content .addService form .form-control.phone::placeholder {font-family: 'notoregular';}
+.mainBody .content .addService form .form-control::placeholder {color: white;}
+.mainBody .content .addService form input[type=submit] {
+    color: #01314D;
+    width: 150px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 0px;
+    border: 1px solid white;
+    background: white;
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -O-transition: all 0.3s ease-in-out;
+}
+.mainBody .content .addService form input[type=submit]:hover {
+    color: white;
+    border: 1px solid #002134;
+    background: #002134;
+}
+.mainBody .content .addService form .form-control:focus {border-bottom: 1px solid #a7a7a7;}
+
+
+/* Main Body Style =>  About Company Page*/
+.mainBody .content .header-about {margin-bottom: 80px;} 
+.mainBody .content .banner-company .banner {background-color: #EDC692;} 
+.mainBody .content .banner-company .banner .bg-dark-point {
+    background-image: url('../img/public/point.png');
+    background-repeat: no-repeat;
+    background-position: right 1.5% bottom 3%;
+    background-size: 120px auto;
+}
+.mainBody .content .banner-company .banner .img-banner {top: -25px;left: -25px;} 
+.mainBody .content .banner-company .banner .describe-banner {
+    top: 120px;left: -200px;
+    transform: rotate(-90deg);
+    transform-origin: 50% 50%;
+} 
+.mainBody .content .banner-company .banner .describe-banner h1 {
+    background-color: #EDC692;
+    font-size: 53pt;
+    color: #002134;
+}
+.mainBody .content .banner-company .banner .line-banner {
+    top: 80px;
+    left: -200px;
+    width: 20px;
+}
+.mainBody .content .about-company .comma-Icon{color: #EDC692;}
+.mainBody .content .about-company .describe{
+    font-size: 18.9pt;
+    line-height: 45px;
+    text-align: justify;
+    background-color: #002134;
+    border-right: 7px solid #EDC692;
+}
+.mainBody .content .teamWork .card {background-color: #002134;border-radius: 0px;border: 0px;}
+.mainBody .content .teamWork .card .card-describe {color: #EDC692;}
+.mainBody .content .teamWork .card .card-link-social a i{
+    color: #002134;
+    width: 35px;
+    height: 35px;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -O-transition: all 0.2s ease-in-out;
+}
+.mainBody .content .teamWork .card .card-link-social a:hover i {
+    color: white;
+    background: #01314D;
+}
+
+/* Main Body Style =>  Service Company Page */
+.mainBody .content .header-services {margin-bottom: 180px;} 
+.mainBody .content .header .describeservice {background-color: #002134;}
+.mainBody .content .header .describeservice .describe {font-size: 15pt;width: 60%;line-height: 40px;}
+.mainBody .content .servicetype .paddservice:nth-child(odd) {
+    padding-left: 35px;
+    top: -120px;
+}
+.mainBody .content .servicetype .paddservice:nth-child(even) {padding-right: 35px;margin-top: 150px;}
+.mainBody .content .servicetype .paddservice .service {
+    height: 550px;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+}
+.mainBody .content .servicetype .paddservice .service .linear-bg {
+    height: 100%;
+    background: linear-gradient(0deg,rgba(98,127,145,1),rgba(255,255,255,0));
+}
+.mainBody .content .servicetype .paddservice .service .header-service h4 {border-right: 3px solid #EDC692;}
+.mainBody .content .servicetype .paddservice .service .descriptionservice .NumService {
+    position: relative;
+    top: -280px;
+}
+.mainBody .content .servicetype .paddservice .service .descriptionservice .describe-service-card p{
+    font-size: 10pt;
+    width: 73%;
+    line-height: 25px;
+}
+
+/* Main Body Style =>  Partners Page */
+.mainBody .content .sliderPartnerSlide .owl-stage{padding-right: 0px !important;}
+.ActiveItem {
+    border: 5px solid #EDC692;
+}
+.mainBody .content .sliderPartnerSlide .item {
+    height: 400px;
+    background-size: cover !important;
+    background-repeat: no-repeat;
+    transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -O-transition: all 0.2s ease-in-out;
+}
+.mainBody .content .sliderPartnerSlide .item .bgimg {
+    background: linear-gradient(0deg,rgba(0,33,52,0.9),rgba(0,33,52,0.7),rgba(255,255,255,0));
+    display: flex;
+    align-items: flex-end;
+}
+.mainBody .content .sliderPartnerSlide .item .bgimg .body-slide .title-slide::before {
+    content: '';
+    position: absolute;
+    width: 95px;
+    height: 2px;
+    background: #EDC692;
+    bottom: -15px;
+}
+.mainBody .content .sliderPartnerSlide .item .body-slide .number {border-right: 1px solid #EDC692;}
+.mainBody .content .mainBody .content .overLay {
+    width: 30%;
+    height: 100%;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: 1;
+    background: linear-gradient(90deg,rgba(0,33,52,1),rgba(0,33,52,0.8),rgba(255,255,255,0));
+}
+.mainBody .content .sliderPartnerSlide {position: relative;z-index: 1;}
+.sliderPartnerSlide .owl-nav {position: relative;}
+.mainBody .content .sliderPartnerSlide .owl-nav button {
+    width: 60px;
+    height: 60px;
+    background: none !important;
+    border: 2px solid white !important;
+    border-radius: 50px !important;
+    position: absolute;
+    font-size: 30px !important;
+    color: white !important;
+    outline: none !important;
+    box-shadow: none !important;
+    cursor: pointer !important;
+    z-index: 50 !important;
+}
+.mainBody .content .sliderPartnerSlide .owl-nav button.owl-next{ position: absolute;left: 100px;top: -250px;}
+.mainBody .content .sliderPartnerSlide .owl-nav button.owl-prev{right: 30px;top: -250px;}
+
+
+.mainBody .content .contact .describe-contact {font-size: 14pt;line-height: 40px;}
+.mainBody .content .data-contact h5,
+.mainBody .content .data-contact h6{color: #EDC692;margin-bottom: 25px;}
+.mainBody .content .data-contact .address p {font-size: 10pt;line-height: 30px;}
+.mainBody .content .data-contact .time li {font-size: 10pt;}
+.mainBody .content .data-contact .socilmedia a{color: white;}
+.mainBody .content .data-contact .socilmedia a i{
+    font-size: 10pt;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    width: 20px;
+    height: 20px;
+    background: white;
+    color: #01314D;
+    margin-left: 5px;
+    margin-bottom: 15px;
+}
+
+
+
+/* Main Body Style =>  detail Page */
+.mainBody .content .detialWorked .worked {padding-left: 25px;}
+.mainBody .content .detialWorked .Related-works {padding-right: 25px;}
+.mainBody .content .detialWorked .header h1 {font-size: 25pt;}
+.mainBody .content .detialWorked .header h1 span {background-color: #002134;border-radius: 5px;}
+.mainBody .content .detialWorked .header h1 i{font-size: 15pt !important;color: #EDC692;}
+.mainBody .content .detialWorked .detail-work .SliderPhotoWork .item {
+    height: 370px;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+    border-radius: 10px;
+}
+.mainBody .content .detialWorked .detail-work .SliderPhotoWork .item .bg-gradient-photo{
+    background:linear-gradient(-1800deg,rgba(98,127,145,0.7),rgba(255,255,255,0));
+    border-radius: 10px;
+}
+.mainBody .content .detialWorked .detail-work .SliderPhotoWork .item .header-works {
+    position: absolute;
+    bottom: 15px;
+    right: 30px;
+    border-right: 3px solid #EDC692;
+}
+.mainBody .content .detialWorked .detail-work .SliderPhotoWork .item .header-works h4{
+    font-size: 17pt;
+}
+.mainBody .content .worked .SliderPhotoWork .owl-dots{
+    position: absolute;
+    left: 20px;
+    bottom: 10px;
+}
+.mainBody .content .worked .SliderPhotoWork .owl-dots .owl-dot span{
+    background: white;
+    border: 1px solid white;
+    margin: 3px;
+    width: 12px;
+    height: 12px;
+    outline: none !important;
+    box-shadow: none !important;
+}
+.mainBody .content .worked .SliderPhotoWork .owl-dots .owl-dot.active span {
+    background: none;
+    border: 1px solid white;
+}
+.mainBody .content .worked .detials-worked .details{
+    background: #002134;
+    margin-top: 20px;
+}
+.mainBody .content .worked .detials-worked .details h6 span {background:#01314D;}
+.mainBody .content .worked .detials-worked .details .Points .type {color: #EDC692;}
+.mainBody .content .worked .detials-worked .details ul {list-style: none;padding-right: 0px !important;}
+.mainBody .content .worked .detials-worked .details ul li {
+    width: 90%;
+    font-size: 12pt;
+    margin-bottom: 17px;
+}
+
+
+
+.mainBody .content .Related-works .Relat-work {
+    height: 160px;
+    background: url('../img/works/work1Slider.png');
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+    border-radius: 5px;
+    border: 3px solid #01314D;
+    margin-bottom: 20px;
+}
+.mainBody .content .Related-works .Relat-work.active {
+    border: 3px solid #EDC692;
+}
+
